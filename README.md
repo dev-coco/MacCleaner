@@ -4,3 +4,5 @@ This is a open source software is used for clean up Mac cache file. Easy and saf
 [Home page](https://dev-coco.github.io/)
 # Feedback
 [Feedback](https://forms.gle/Jjz5iPqceSjbpvcQ6)
+#More features
+I am working on system optimization...
