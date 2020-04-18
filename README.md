@@ -1,5 +1,5 @@
 # MacCleaner
-This is a open source software, used for clean up Mac cache file. Easy and safe.
+Mac Cleaner is an open source software, used for clean up Mac cache file. Easy and safe.
 
 [Home page](https://dev-coco.github.io/)
 # Feedback
