@@ -55,6 +55,7 @@ sudo mv -f /Users/$USER/Library/Containers/com.apple.AppStore/Data/Library/Cache
 sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent' > /dev/null 2>&1
 
 #Clean Terminal History
+sudo mv -f /Users/$USER/.bash_sessions/* /Users/$USER/.Trash/ > /dev/null 2>&1
 history -c
 
 echo done
