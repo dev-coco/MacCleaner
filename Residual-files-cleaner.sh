@@ -1,6 +1,6 @@
 #uninstall zoom
-sudo rm -rf /Users/*/Library/Preferences/ZoomChat.plist
-sudo rm -rf /Users/*/Library/Internet*Plug-Ins/ZoomUsPlugIn.plugin
+sudo rm -rf /Users/$USER/Library/Preferences/ZoomChat.plist
+sudo rm -rf /Users/$USER/Library/Internet*Plug-Ins/ZoomUsPlugIn.plugin
 
 #uninstall avast
 sudo rm -rf /Library/Application\ Support/AvastHUB
