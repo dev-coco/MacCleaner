@@ -12,7 +12,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0; killall Dock
 #sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
 
 #Enable TRIM
-sudo trimforce enable
+#sudo trimforce enable
 
 #Enable Performance Mode
 SystemVersion=`sw_vers -productVersion`
