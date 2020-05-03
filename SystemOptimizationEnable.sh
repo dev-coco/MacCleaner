@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Disable GPU Switch
-pmset -a GPUSwitch 0
+#pmset -a GPUSwitch 0
 
 #Remove Dock Delay
 defaults write com.apple.dock autohide-time-modifier -float 0; killall Dock
