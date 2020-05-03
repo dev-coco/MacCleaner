@@ -6,7 +6,7 @@
 	<string>com.dev-coco.MacCleaner</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/mac/Downloads/b.sh</string>
+		<string>/Applications/MacCleaner.app/Contents/Resources/AutoSystemOptimization.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
