@@ -6,6 +6,9 @@ pmset -a GPUSwitch 0
 #Remove Dock Delay
 defaults write com.apple.dock autohide-time-modifier -float 0; killall Dock
 
+#Load Auto System Optimization
+cd /Users/$USER/Library/LaunchAgents/ && curl -s https://raw.githubusercontent.com/dev-coco/MacCleaner/master/com.dev-coco.MacCleaner.plist -o com.dev-coco.MacCleaner.plist && sudo chmod u+x /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist && launchctl load -w /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
+
 #Disable Spotlight
 #sudo mdutil -a -i off
 #sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
