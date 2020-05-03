@@ -7,9 +7,10 @@ pmset -a GPUSwitch 2
 defaults delete com.apple.dock autohide-time-modifier; killall Dock
 
 #Enable Spotlight
-sudo mdutil -a -i on
-sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+#sudo mdutil -a -i on
+#sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+#sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+
 
 #Enable Performance Mode
 SystemVersion=`sw_vers -productVersion`
