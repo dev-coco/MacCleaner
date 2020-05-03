@@ -12,7 +12,7 @@ sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
 sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
 
 #Enable TRIM
-sudo trimforce enable
+#sudo trimforce enable
 
 #Enable Performance Mode
 SystemVersion=`sw_vers -productVersion`
