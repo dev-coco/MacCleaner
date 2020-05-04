@@ -1,16 +1,5 @@
 #!/bin/bash
 
-#Enable GPU Auto Switch
-#pmset -a GPUSwitch 2
-
-#Restore Dock Delay
-defaults delete com.apple.dock autohide-time-modifier; killall Dock
-
-#Enable Spotlight
-#sudo mdutil -a -i on
-#sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
-#sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-
 #Unload System Optimization
 launchctl unload -w /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist && rm -rf /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
 
@@ -22,4 +11,16 @@ then
 else
    sudo nvram boot-args="$(nvram boot-args 2>/dev/null | sed -e $'s/boot-args\t//;s/serverperfmode=1//')"
 fi
+
+#————————————————————If you like, you can manually set the following content.————————————————————
+#Enable GPU Auto Switch
+#pmset -a GPUSwitch 2
+
+#Restore Dock Delay
+#defaults delete com.apple.dock autohide-time-modifier; killall Dock
+
+#Enable Spotlight
+#sudo mdutil -a -i on
+#sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+#sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
 
