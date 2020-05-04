@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Load Auto System Optimization
+chmod +x /Applications/MacCleaner.app/Contents/Resources/AutoSystemOptimization.sh
 cd /Users/$USER/Library/LaunchAgents/ && curl -s https://raw.githubusercontent.com/dev-coco/MacCleaner/master/com.dev-coco.MacCleaner.plist -o com.dev-coco.MacCleaner.plist && sudo chmod +x /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist && launchctl load -w /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
 
 #Enable Performance Mode
