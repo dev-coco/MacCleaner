@@ -7,6 +7,7 @@ sudo mv -f /Users/$USER/Library/iTunes/iPhone\ Software\ Updates/* /Users/$USER/
 #Xcode Caches
 sudo mv -f /Users/$USER/Library/Developer/Xcode/DerivedData/* /Users/$USER/.Trash/ > /dev/null 2>&1
 sudo mv -f /Users/$USER/Library/Developer/Xcode/Archives/* /Users/$USER/.Trash/ > /dev/null 2>&1
+sudo mv -f /Users/$USER/Library/Developer/Xcode/iOS\ Device\ Logs/* /Users/$USER/.Trash/ > /dev/null 2>&1
 
 #System Caches
 sudo mv -f /private/var/log/* /Users/$USER/.Trash/ > /dev/null 2>&1
