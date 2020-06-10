@@ -23,6 +23,7 @@ sudo rm -rf /private/var/db/diagnostics/Signpost/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/HighVolume/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/timesync/* > /dev/null 2>&1
 sudo rm -rf /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/*.ips > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/*
 
 #Safari Caches
 sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/* > /dev/null 2>&1
@@ -58,6 +59,9 @@ sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '
 #Clean Terminal History
 sudo rm -rf /Users/$USER/.bash_sessions/* > /dev/null 2>&1
 history -c
+
+#Bitdefender Caches
+sudo rm -rf /Users/$USER/Library/Containers/com.bitdefender.BitdefenderVirusScanner/Data/Library/Application\ Support/Bitdefender\ Virus\ Scanner/antivirus.bundle > /dev/null 2>&1
 
 sudo rm -rf /Users/$USER/.Trash/* > /dev/null 2>&1
 
