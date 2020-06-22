@@ -12,5 +12,8 @@ sudo rm -rf /Library/LaunchDaemons/com.avast.init.plist
 sudo rm -rf /Library/LaunchDaemons/com.avast.update.plist
 sudo rm -rf /Library/Logs/Avast
 sudo rm -rf /Library/Logs/AvastHUB
-#/Users/$USER/Library/Cookies/com.avast.AAFM.binarycookies
+
+#uninstall ccleaner
+sudo rm -rf /Users/$USER/Library/Cookies/com.avast.AAFM.binarycookies
+sudo rm -rf /Users/$USER/Library/Cookies/com.piriform.ccleaner.binarycookies
 #The shell does not have permission to delete it, even if sudo is used. You can use Finder to find file and delete it.
