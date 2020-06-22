@@ -8,6 +8,7 @@ sudo rm -rf /Users/$USER/Library/iTunes/iPhone\ Software\ Updates/* > /dev/null 
 sudo rm -rf /Users/$USER/Library/Developer/Xcode/DerivedData/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Developer/Xcode/Archives/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Developer/Xcode/iOS\ Device\ Logs/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Developer/CoreSimulator/Devices/* > /dev/null 2>&1
 
 #System Caches
 sudo rm -rf /private/var/log/* > /dev/null 2>&1
@@ -23,13 +24,16 @@ sudo rm -rf /private/var/db/diagnostics/Signpost/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/HighVolume/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/timesync/* > /dev/null 2>&1
 sudo rm -rf /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/*.ips > /dev/null 2>&1
-sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/*
+sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/*  > /dev/null 2>&1
 
 #Safari Caches
 sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/* > /dev/null 2>&1
 sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.data > /dev/null 2>&1
 sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.maps > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Containers/io.te0.WebView/Data/Library/Caches/WebKit > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Safari/History.db* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Safari/RecentlyClosedTabs.plist > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Safari/CloudHistoryRemoteConfiguration.plist > /dev/null 2>&1
 
 #Chrome Caches
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/GPUCache/* > /dev/null 2>&1
@@ -49,10 +53,6 @@ sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Session\ S
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Current\ Session > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Storage/ext/* > /dev/null 2>&1
 
-#Others Caches
-sudo rm -rf /Users/$USER/Library/Containers/com.apple.QuickTimePlayerX/Data/Library/Caches/* > /dev/null 2>&1
-sudo rm -rf /Users/$USER/Library/Containers/com.apple.AppStore/Data/Library/Caches/* > /dev/null 2>&1
-
 #Clean Download History
 sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent' > /dev/null 2>&1
 
@@ -60,8 +60,23 @@ sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '
 sudo rm -rf /Users/$USER/.bash_sessions/* > /dev/null 2>&1
 history -c
 
-#Bitdefender Caches
+#Applications Caches
+sudo rm -rf /Users/$USER/Library/Containers/com.apple.QuickTimePlayerX/Data/Library/Caches/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/com.apple.AppStore/Data/Library/Caches/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Containers/com.bitdefender.BitdefenderVirusScanner/Data/Library/Application\ Support/Bitdefender\ Virus\ Scanner/antivirus.bundle > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/com.bitdefender.BitdefenderVirusScanner/Data/Library/Caches/com.bitdefender.BitdefenderVirusScanner/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/Combo\ Cleaner > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/com.apple.news/Data/Library/Caches/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/dev-coco.MusicPlayer/Data/Library/Caches/WebKit > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/com.apple.Notes/Data/Library/Caches/* > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.desktoppicture/* > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/dev-coco.MusicPlayer > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.Preview > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.Notes > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.bitdefender.BitdefenderVirusScanner > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.Notes > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari > /dev/null 2>&1
+sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari.CacheDeleteExtension/WebKit/MediaCache > /dev/null 2>&1
 
 sudo rm -rf /Users/$USER/.Trash/* > /dev/null 2>&1
 
