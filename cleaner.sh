@@ -18,6 +18,7 @@ sudo rm -rf /Library/Logs/DiagnosticReports/*.* > /dev/null 2>&1
 sudo rm -rf /private/var/log/DiagnosticMessages/* > /dev/null 2>&1
 sudo rm -rf /private/var/tmp/com.apple.messages > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Caches/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Caches/CloudKit > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/Special/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/Persist/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/Signpost/* > /dev/null 2>&1
@@ -77,7 +78,6 @@ sudo rm -rf /private/var/folders/*/*/*/com.bitdefender.BitdefenderVirusScanner >
 sudo rm -rf /private/var/folders/*/*/*/com.apple.Notes > /dev/null 2>&1
 sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari > /dev/null 2>&1
 sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari.CacheDeleteExtension/WebKit/MediaCache > /dev/null 2>&1
-
-sudo rm -rf /Users/$USER/.Trash/* > /dev/null 2>&1
+sudo rm -rf /Library/Caches/Desktop\ Pictures/*/* > /dev/null 2>&1
 
 echo done
