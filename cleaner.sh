@@ -44,7 +44,7 @@ sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/*-journal 
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/databases/*-journal > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Visited\ Links > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Top\ Sites > /dev/null 2>&1
-sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/History\ Provider\ Cache /Users/*USER/.Trash/ > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/History\ Provider\ Cache > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Current\ Tabs > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Network\ Action\ Predictor > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/*.ldb > /dev/null 2>&1
