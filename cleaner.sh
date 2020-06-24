@@ -80,4 +80,5 @@ sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari > /dev/null 2>&1
 sudo rm -rf /private/var/folders/*/*/*/com.apple.Safari.CacheDeleteExtension/WebKit/MediaCache > /dev/null 2>&1
 sudo rm -rf /Library/Caches/Desktop\ Pictures/*/* > /dev/null 2>&1
 
+sudo rm -rf /Users/$USER/.Trash/*  > /dev/null 2>&1
 echo done
