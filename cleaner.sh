@@ -8,7 +8,9 @@ sudo rm -rf /Users/$USER/Library/iTunes/iPhone\ Software\ Updates/* > /dev/null 
 sudo rm -rf /Users/$USER/Library/Developer/Xcode/*/* > /dev/null 2>&1
 
 #System Caches
+sudo mv /private/var/log/privoxy /private/var/privoxy > /dev/null 2>&1
 sudo rm -rf /private/var/log/* > /dev/null 2>&1
+sudo mv /private/var/privoxy /private/var/log/privoxy > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Logs/* > /dev/null 2>&1
 sudo rm -rf /Library/Logs/DiagnosticReports/*.* > /dev/null 2>&1
 sudo rm -rf /private/var/tmp/com.apple.messages > /dev/null 2>&1
