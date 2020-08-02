@@ -18,6 +18,7 @@ sudo rm -rf /Users/$USER/Library/Caches/* > /dev/null 2>&1
 sudo rm -rf /private/var/db/diagnostics/*/* > /dev/null 2>&1
 sudo rm -rf /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/*.ips > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/*  > /dev/null 2>&1
+sudo rm -rf /private/tmp/gzexe* > /dev/null 2>&1
 
 #Safari Caches
 sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/* > /dev/null 2>&1
