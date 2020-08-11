@@ -30,6 +30,8 @@ sudo rm -rf /Users/$USER/Library/Safari/RecentlyClosedTabs.plist > /dev/null 2>&
 sudo rm -rf /Users/$USER/Library/Safari/CloudHistoryRemoteConfiguration.plist > /dev/null 2>&1
 
 #Chrome Caches
+ChromePath="/Applications/Google Chrome.app"
+if [[ -d $ChromePath ]]; then
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/GPUCache/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Storage/ext/*/def/GPUCache/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/*-journal > /dev/null 2>&1
@@ -45,6 +47,29 @@ sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Extension\
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Session\ Storage/* > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Current\ Session > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/Storage/ext/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/Google/Chrome/*/*/Cache > /dev/null 2>&1
+fi
+
+#Brave Caches
+BravePath="/Applications/Brave Browser.app"
+if [[ -d $BravePath ]]; then
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/GPUCache/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Storage/ext/*/def/GPUCache/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/*-journal > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/databases/*-journal > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Visited\ Links > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Top\ Sites > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/History\ Provider\ Cache > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Current\ Tabs > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Network\ Action\ Predictor > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/*.ldb > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/*.log > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Extension\ State/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Session\ Storage/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Current\ Session > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/Storage/ext/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Application\ Support/BraveSoftware/Brave-Browser/*/*/Cache > /dev/null 2>&1
+fi
 
 #Clean Download History
 sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent' > /dev/null 2>&1
