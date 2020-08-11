@@ -51,7 +51,7 @@ sudo sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '
 
 #Clean Terminal History
 sudo rm -rf /Users/$USER/.bash_sessions/* > /dev/null 2>&1
-history -c
+sudo rm -rf /Users/$USER/.bash_history > /dev/null 2>&1
 
 #Applications Caches
 sudo rm -rf /Users/$USER/Library/Containers/com.apple.QuickTimePlayerX/Data/Library/Caches/* > /dev/null 2>&1
