@@ -21,7 +21,7 @@ sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/*  > /dev/nu
 sudo rm -rf /private/tmp/gzexe* > /dev/null 2>&1
 
 #Safari Caches
-sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/* > /dev/null 2>&1
+sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/* > /dev/null 2>&1
 sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.data > /dev/null 2>&1
 sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.maps > /dev/null 2>&1
 sudo rm -rf /Users/$USER/Library/Containers/io.te0.WebView/Data/Library/Caches/WebKit > /dev/null 2>&1
