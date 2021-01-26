@@ -7,7 +7,12 @@ sudo rm -rf /Users/$USER/Library/Application\ Support/MobileSync/Backup/* > /dev
 sudo rm -rf /Users/$USER/Library/Developer/Xcode/*/* > /dev/null 2>&1
 
 #System Caches
-sudo mv /private/var/log/privoxy /private/var/privoxy > /dev/null 2>&1 & sudo rm -rf /private/var/log/* > /dev/null 2>&1 & sudo mv /private/var/privoxy /private/var/log/privoxy > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Logs/* > /dev/null 2>&1 & sudo rm -rf /Library/Logs/DiagnosticReports/*.* > /dev/null 2>&1 & sudo rm -rf /private/var/tmp/com.apple.messages > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Caches/* > /dev/null 2>&1 & sudo rm -rf /private/var/db/diagnostics/*/* > /dev/null 2>&1 & sudo rm -rf /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/*.ips > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/* > /dev/null 2>&1 & sudo rm -rf /private/tmp/gzexe* > /dev/null 2>&1
+sudo mv /private/var/log/privoxy /private/var/privoxy > /dev/null 2>&1
+sudo rm -rf /private/var/log/* > /dev/null 2>&1
+sudo mv /private/var/privoxy /private/var/log/privoxy > /dev/null 2>&1
+
+#System Caches
+sudo rm -rf /Users/$USER/Library/Logs/* > /dev/null 2>&1 & sudo rm -rf /Library/Logs/DiagnosticReports/*.* > /dev/null 2>&1 & sudo rm -rf /private/var/tmp/com.apple.messages > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Caches/* > /dev/null 2>&1 & sudo rm -rf /private/var/db/diagnostics/*/* > /dev/null 2>&1 & sudo rm -rf /Library/Logs/DiagnosticReports/ProxiedDevice-Bridge/*.ips > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Application\ Support/CrashReporter/* > /dev/null 2>&1 & sudo rm -rf /private/tmp/gzexe* > /dev/null 2>&1
 
 #Safari Caches
 sudo rm -rf /Users/$USER/Library/Containers/com.apple.Safari/Data/Library/Caches/* > /dev/null 2>&1 & sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.data > /dev/null 2>&1 & sudo rm -rf /private/var/folders/ry/*/*/com.apple.Safari/com.apple.Safari/com.apple.metal/*/libraries.maps > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Containers/io.te0.WebView/Data/Library/Caches/WebKit > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Safari/History.db* > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Safari/RecentlyClosedTabs.plist > /dev/null 2>&1 & sudo rm -rf /Users/$USER/Library/Safari/CloudHistoryRemoteConfiguration.plist > /dev/null 2>&1
