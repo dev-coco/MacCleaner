@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Unload System Optimization
-launchctl unload -w /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist && rm -rf /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
+launchctl unload -w /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
+rm -rf /Users/$USER/Library/LaunchAgents/com.dev-coco.MacCleaner.plist
 
 #Enable Performance Mode
 SystemVersion=`sw_vers -productVersion`
